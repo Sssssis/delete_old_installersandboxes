@@ -2,7 +2,7 @@
 
 A small utility for inspecting and cleaning stale macOS PackageKit InstallerSandboxes.
 
-macOS の システムデータを謎に圧迫する一因となっている、PackageKit が残した InstallerSandboxes を調査・削除するためのツールです。
+macOS の システムデータを謎に圧迫する一因となっている、PackageKit が残した InstallerSandboxes を調査・削除するためのツールです。<br>
 InstallerSandboxesは本来作業が終了したら自動削除されるはずのインストーラーの残骸で、これを検索して削除します。
 
 ## Features / 主な機能
@@ -27,29 +27,29 @@ InstallerSandboxesは本来作業が終了したら自動削除されるはず�
 
 - macOS
 - Python 3.7+
-- sudo
+- sudo<br>
 管理者権限で実行してください。
-- Terminal with Full Disk Access
+- Terminal with Full Disk Access<br>
 ターミナルにフルディスクアクセスを許可してください。
 
 ## Usage / 使用方法
 
-Preview
+Preview<br>
 下記のコマンドでスキャンのみの実行ができます。初期設定では2023年以前のファイルを対象としたスキャンを行います。
 ```bash
 sudo python3 delete_old_installersandboxes.py
 ```
 
-Delete everything up to 2023
-下記のように--deleteと--yearを追加することで、任意の年以前のファイルを実際に削除できます。
-削除前には一旦プログラムがストップして、確認が入ります。DELETEと再度入力して進んでください。
+Delete everything up to 2023<br>
+下記のように--deleteと--yearを追加することで、任意の年以前のファイルを実際に削除できます。<br>
+削除前には一旦プログラムがストップして、確認が入ります。DELETEと再度入力して進んでください。<br>
 ```bash
 sudo python3 delete_old_installersandboxes.py --delete --year 2023
 ```
 
 ## Disclaimer / 注意
 
-Use at your own risk.
+Use at your own risk.<br>
 
 自己責任で使用してください。
 
